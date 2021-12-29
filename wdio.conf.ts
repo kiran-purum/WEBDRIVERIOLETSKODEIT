@@ -55,11 +55,11 @@ export const config: WebdriverIO.Config = {
             acceptInsecureCerts: true
         },
 
-        // {
-        //     maxInstances: 1,
-        //     browserName: 'MicrosoftEdge',
-        //     acceptInsecureCerts: true
-        // },
+        {
+            maxInstances: 1,
+            browserName: 'MicrosoftEdge',
+            acceptInsecureCerts: true
+        },
     ],
     //
     // ===================
@@ -108,8 +108,7 @@ export const config: WebdriverIO.Config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver'],
-    // , 'selenium-standalone'],
+    services: ['chromedriver', 'selenium-standalone'],
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
